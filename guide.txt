@@ -1,0 +1,5 @@
+three way of creating virtual enviroment
+1 = python  -m venv myvenv
+activate = myvenv/Script/activate
+2 = pip install virtualenv
+        virtualenv -p python virtual_env
