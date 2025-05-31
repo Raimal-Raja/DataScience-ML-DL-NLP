@@ -3,3 +3,5 @@ three way of creating virtual enviroment
 activate = myvenv/Script/activate
 2 = pip install virtualenv
         virtualenv -p python virtual_env
+activate  = virtualenv\Scripts\activate
+3 = conda create -p venv_my python==3.10 -y
