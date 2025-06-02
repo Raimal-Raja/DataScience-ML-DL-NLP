@@ -10,5 +10,10 @@
 
 
 # multiple line statement
-x = 3; y = 10; z = x+y
-print(z)
+# x = 3; y = 10; z = x+y
+# print(z)
+
+
+# myset = {1,2,3,4,5}
+# myset.discard(5)
+# print(myset)
