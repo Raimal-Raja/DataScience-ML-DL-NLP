@@ -1,1 +1,2 @@
-ipykernal
+# ipykernal
+numpy
