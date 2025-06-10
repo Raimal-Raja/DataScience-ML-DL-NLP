@@ -17,10 +17,18 @@
 
 
 ## Generators
-def sqaure(n):
-    for i in range(3):
-        yield i**2
+# def sqaure(n):
+#     for i in range(3):
+#         yield i**2
         
-print(sqaure(3))
-for i in sqaure(3):
-    print(i)
+# print(sqaure(3))
+# for i in sqaure(3):
+#     print(i)
+
+
+# Decorators
+def welcome():
+    return "Welcome to the welcome function"
+
+wel = welcome()
+print(wel())
