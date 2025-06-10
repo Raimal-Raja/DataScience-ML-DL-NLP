@@ -27,8 +27,13 @@
 
 
 # Decorators
-def welcome():
-    return "Welcome to the welcome function"
+# def welcome():
+#     return "Welcome to the welcome function"
 
-wel = welcome()
-print(wel())
+# wel = welcome()
+
+# del wel
+# print(wel)
+
+list = [1,2,34]
+print(list)
