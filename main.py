@@ -35,5 +35,10 @@
 # del wel
 # print(wel)
 
-list = [1,2,34]
-print(list)
+# list = [1,2,34]
+# print(list)
+
+import pandas as pd
+path = 'example.csv'
+data_file = pd.read_csv(path)
+print(data_file.head(2))
