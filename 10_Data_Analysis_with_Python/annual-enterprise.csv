@@ -70,7 +70,7 @@ Year,Code,Name,Size-gap,variable,value,unit
 2011,A,"Agriculture, Forestry and Fishing",h_200+,Total expenditure,850,DOLLARS(millions)
 2011,A,"Agriculture, Forestry and Fishing",h_200+,Operating profit before tax,93,DOLLARS(millions)
 2011,A,"Agriculture, Forestry and Fishing",h_200+,Total assets,2555,DOLLARS(millions)
-2011,A,"Agriculture, Forestry and Fishing",h_200+,Fixed tangible assets,C,DOLLARS(millions)
+2011,A,"Agriculture, Forestry and Fishing",h_200+,Fixed tangible assets,00,DOLLARS(millions)
 2011,A,"Agriculture, Forestry and Fishing",i_Industry_Total,Activity unit,71652,COUNT
 2011,A,"Agriculture, Forestry and Fishing",i_Industry_Total,Rolling mean employees,97878,COUNT
 2011,A,"Agriculture, Forestry and Fishing",i_Industry_Total,Salaries and wages paid,3527,DOLLARS(millions)
