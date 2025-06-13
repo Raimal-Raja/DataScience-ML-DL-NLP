@@ -39,6 +39,14 @@
 # print(list)
 
 import pandas as pd
-path = 'example.csv'
-data_file = pd.read_csv(path)
-print(data_file.head(2))
+# path = 'example.csv'
+# data_file = pd.read_csv(path)
+# print(data_file.head(2))
+
+
+df = pd.read_csv('annual-enterprise.csv')
+# print(file_data)
+
+df['missing_values'] = df['value'].fillna(df['value'].mean())
+
+print(df)
