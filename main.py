@@ -39,14 +39,18 @@
 # print(list)
 
 import pandas as pd
+import matplotlib.pyplot as plt
 # path = 'example.csv'
 # data_file = pd.read_csv(path)
 # print(data_file.head(2))
 
 
-df = pd.read_csv('annual-enterprise.csv')
-# print(file_data)
+# df = pd.read_csv('annual-enterprise.csv')
+# # print(file_data)
 
-df['missing_values'] = df['value'].fillna(df['value'].mean())
+# df['missing_values'] = df['value'].fillna(df['value'].mean())
 
-print(df)
+# print(df)
+
+# data = [1,2,2,3,3,3,4,4,4,4,5,5,5,5]
+# plt.hist(data,bins=5,color='blue', edgecolor='black')
