@@ -1,4 +1,4 @@
-# ipykernal
+ipykernal
 numpy
 pandas
 matplotlib
