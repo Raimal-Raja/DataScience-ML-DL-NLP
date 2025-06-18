@@ -1,3 +1,10 @@
+# import pandas as pd
+# import matplotlib.pyplot as plt
+# import numpy as np
+# import seaborn as sb
+import logging
+
+
 ## file handling and exception handling
 # try:
 #     file = open('example.txt', 'r')
@@ -38,8 +45,7 @@
 # list = [1,2,34]
 # print(list)
 
-import pandas as pd
-import matplotlib.pyplot as plt
+
 # path = 'example.csv'
 # data_file = pd.read_csv(path)
 # print(data_file.head(2))
@@ -54,3 +60,13 @@ import matplotlib.pyplot as plt
 
 # data = [1,2,2,3,3,3,4,4,4,4,5,5,5,5]
 # plt.hist(data,bins=5,color='blue', edgecolor='black')
+
+# logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    filename='app.log',
+    filemode='w',
+    level=logging.DEBUG,
+    format='%(asctime)s-%(name)s-%(levelname)s-%(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S '
+    )
+logging.debug("this is debug message")
