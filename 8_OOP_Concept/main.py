@@ -40,21 +40,50 @@
 
 
 
-## instance variables and class variable
-class Car:
-    wheel = 4
+# ## instance variables and class variable
+# class Car:
+#     wheel = 4
     
-    def __init__(self):
-        self.modl = 23
-        self.compy =  "BMW"
+#     def __init__(self):
+#         self.modl = 23
+#         self.compy =  "BMW"
         
 
-cr1 = Car()
+# cr1 = Car()
 
-cr1.compy = 'Corola'
+# cr1.compy = 'Corola'
 
-cr2 = Car()
+# cr2 = Car()
 
-print(cr1.compy, cr1.modl, cr1.wheel)
-print(cr2.compy, cr2.modl, cr2.wheel)
+# print(cr1.compy, cr1.modl, cr1.wheel)
+# print(cr2.compy, cr2.modl, cr2.wheel)
+
+
+# class Student:
+#     school = 'Telusko'
+    
+#     def __init__(self,m1,m2,m3):
+#         self.m1 = m1
+#         self.m2 = m2
+#         self.m3 = m3
+        
+#     def avg(self):
+#         return (self.m1 + self.m2 + self.m3)/3
+    
+#     @classmethod
+#     def get_school(cls):
+#         return cls.school
+    
+    
+#     @staticmethod
+#     def info():
+#         print("This is a static method")
+    
+
+# s1 =  Student(23,23,34)
+# s2 =  Student(11,45,78)
+
+# print(s1.avg())
+# print(Student.get_school())
+# Student.info()
 
