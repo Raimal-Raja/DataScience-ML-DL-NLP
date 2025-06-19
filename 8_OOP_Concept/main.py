@@ -87,3 +87,28 @@
 # print(Student.get_school())
 # Student.info()
 
+class X:
+    def __init__(self):
+        print('this class x')
+
+class A(X):
+    def __init__(self):
+        print('i am inside A init')
+        
+    def hello():
+        print('Hello')
+    
+class B(X):
+    def __init__(self):
+        super().__init__()
+    print('i am inside B')
+    def welcome():
+        print("Welcome to learn OOP")
+        
+class C(A,B):
+    def __init__(self):
+        print('i am inside c')
+        
+        
+b = B()
+# a= A()
