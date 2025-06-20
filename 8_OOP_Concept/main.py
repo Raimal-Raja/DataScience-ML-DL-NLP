@@ -87,28 +87,44 @@
 # print(Student.get_school())
 # Student.info()
 
-class X:
-    def __init__(self):
-        print('this class x')
+# class X:
+#     def __init__(self):
+#         print('this class x')
 
-class A(X):
-    def __init__(self):
-        print('i am inside A init')
+# class A(X):
+#     def __init__(self):
+#         print('i am inside A init')
         
-    def hello():
-        print('Hello')
+#     def hello():
+#         print('Hello')
     
-class B(X):
-    def __init__(self):
-        super().__init__()
-    print('i am inside B')
-    def welcome():
-        print("Welcome to learn OOP")
+# class B(X):
+#     def __init__(self):
+#         super().__init__()
+#     print('i am inside B')
+#     def welcome():
+#         print("Welcome to learn OOP")
         
-class C(A,B):
-    def __init__(self):
-        print('i am inside c')
+# class C(A,B):
+#     def __init__(self):
+#         print('i am inside c')
         
         
-b = B()
-# a= A()
+# b = B()
+# # a= A()
+
+class Pycharm:
+    def ide(self):
+        print("ide")
+class Myeditor:
+    def execute(self):
+        print("Ide executed")
+        
+
+class laptop:
+    def code(self, ide):
+        ide.execute()
+        
+ide = Myeditor()
+lap1 = laptop()
+lap1.code(ide)
