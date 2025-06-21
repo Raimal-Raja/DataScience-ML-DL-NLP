@@ -14,12 +14,19 @@ import threading
 def fetch_web_content(url):
     response = requests.get(url)
     soup = bs(response.content, 'html.parser')
-    print(f"fetche {len(soup.text)} character from {url}")
+    print(f"fetched {len(soup.text)} character from {url}")
+    print(f"fetched {soup.text} content from {url}")
     
 threads = []
+urls =[
+    
+    'https://www.python.org/community/diversity/',
+    'https://www.python.org/community/lists/',
+    'https://www.python.org/community/irc/'
+]
 
 for url in urls:
-    thread = threading.Thread(target=fetch_web_content, args=(url))
+    thread = threading.Thread(target=fetch_web_content, args=(url,))
     threads.append(thread)
     thread.start()
     
