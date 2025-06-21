@@ -9,7 +9,6 @@ CPU cores, improving performance
 
 import multiprocessing
 import math
-import multiprocessing.pool
 import sys
 import time
 
