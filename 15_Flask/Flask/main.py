@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 
 ## WSGI Application
@@ -12,6 +12,13 @@ def welcome():
 @app.route('/about')
 def about():
     return render_template('about.html')
+
+@app.route('/form', methods=['GET','POST'])
+def form():
+    if request.method =='POST':
+        name = request.form['name']
+        return f'Hello {name}!'
+    return render_template('form.html')
 
 
 if __name__ =='__main__':
