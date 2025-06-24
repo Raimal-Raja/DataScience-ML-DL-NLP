@@ -1,3 +1,17 @@
+## Building URL dynamically
+## Vairable Rule
+## Jinja 2 template Enginge
+
+## Jinja2 Template Engine
+'''
+{{ }} expression to print output in html
+{% ...% } conditional statement, loops
+{# ....#} comments
+
+'''
+
+
+
 from flask import Flask, render_template, request
 
 
