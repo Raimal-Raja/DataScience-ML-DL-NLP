@@ -57,7 +57,10 @@ def successres(score):
     exp = {'score':score, 'res':res}
         
     return render_template('result1.html', result=exp)
-        
+
+@app.route('/successif/<int:score>')
+def successif(score):
+    return render_template('result2.html', result=score)        
 
 
 if __name__ =='__main__':
