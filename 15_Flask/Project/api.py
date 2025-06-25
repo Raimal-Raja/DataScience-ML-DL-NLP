@@ -8,8 +8,8 @@ app = Flask(__name__)
 #initil data in my to do list
 
 items =[
-    {'ID': 1,"Name":"Item 1", "Description":"This is item1"},
-    {'ID': 2,"Name":"Item 2", "Description":"This is item2"}
+    {'ID': 1,"Name":"Item 1", "description":"This is item1"},
+    {'ID': 2,"Name":"Item 2", "description":"This is item2"}
     ]
 
 
@@ -23,7 +23,7 @@ def get_items():
     return jsonify(items)
 
 # Get: Retreive a specific item by ID
-@app.route('/items/<int:item_id', methods=['GET'])
+@app.route('/items/<int:item_id>', methods=['GET'])
 def get_item(item_id):
     item = next((item for item in items if item['ID']==item_id), None)
     if item is None:
@@ -38,7 +38,7 @@ def create_new_task():
      new_item = {
          'ID':items[-1]['ID']+1 if items else 1,
          'name':request.json['name'],
-         "Description":request.json['Description']
+         "description":request.json['description']
      }
      items.append(new_item)
      return jsonify(new_item)
@@ -51,7 +51,15 @@ def update_item(item_id):
     if item in None:
         return jsonify({"Error": "Item not found"})
     item['name'] = request.json.get('name', item['name'])    
+    item['description'] = request.json.get('description', item['description'])  
+    return jsonify(item)  
 
+# Delete: Delete an item
+@app.route('items//<int:item_id>',methods=["DELETE"])
+def delete_item(item_id):
+    global items
+    items = [item for item in items if item['ID'] !=item_id]
+    return jsonify({'Result': 'item deleted'})
 
 if __name__=="__main__":
     app.run(debug=True)
