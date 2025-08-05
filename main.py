@@ -62,11 +62,12 @@ import logging
 # plt.hist(data,bins=5,color='blue', edgecolor='black')
 
 # logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logging.basicConfig(
-    filename='app.log',
-    filemode='w',
-    level=logging.DEBUG,
-    format='%(asctime)s-%(name)s-%(levelname)s-%(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S '
-    )
-logging.debug("this is debug message")
+# logging.basicConfig(
+#     filename='app.log',
+#     filemode='w',
+#     level=logging.DEBUG,
+#     format='%(asctime)s-%(name)s-%(levelname)s-%(message)s',
+#     datefmt='%Y-%m-%d %H:%M:%S '
+#     )
+# logging.debug("this is debug message")
+
