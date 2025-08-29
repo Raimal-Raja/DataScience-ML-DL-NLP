@@ -8,8 +8,8 @@ application = Flask(__name__)
 app = application
 
 ## import ridge regression and standard scaler pickle
-ridge_model = pickle.load(open('models/ridge.pkl', 'rb'))
-standard_scaler = pickle.load(open('models/scaler.pkl', 'rb'))
+ridge_model = pickle.load(open(r'D:\GitHub\DataScience-ML-DL-NLP-Projects-Practice\19_Machine Learning\4_ Steps By Step Project Implementation With LifeCycle OF ML Project\ML Project Deployment in AWS\models\ridge.pkl', 'rb'))
+standard_scaler = pickle.load(open(r'D:\GitHub\DataScience-ML-DL-NLP-Projects-Practice\19_Machine Learning\4_ Steps By Step Project Implementation With LifeCycle OF ML Project\ML Project Deployment in AWS\models\scaler.pkl', 'rb'))
 
 @app.route("/")
 def index():
