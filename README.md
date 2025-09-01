@@ -127,7 +127,3 @@ It's a one-stop learning hub for aspiring data practitioners looking to build pr
 Feel free to fork this repository, explore the content, and contribute enhancements—whether new tutorials, better examples, or improved documentation are always welcome.
 
 ---
-
-## License
-
-*(Specify a license here, e.g., MIT, Apache 2.0, etc.—or note "All rights reserved" if proprietary.)*
