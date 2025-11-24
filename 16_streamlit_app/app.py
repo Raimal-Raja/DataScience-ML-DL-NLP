@@ -6,6 +6,7 @@ import pandas as pd
 ## Title of the application
 st.title("Hello Streamlit")
 
+
 # Display a simple text
 st.write('This is a simple txt')
 
