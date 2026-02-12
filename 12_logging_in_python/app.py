@@ -13,6 +13,7 @@ logging.basicConfig(
         ]
     )
 
+
 logger = logging.getLogger('ArithmeticApp')
 
 
