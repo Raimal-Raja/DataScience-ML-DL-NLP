@@ -2,9 +2,9 @@
 
 Learning archive of Python, statistics, machine learning, deep learning, NLP, deployment, and project exercises.
 
-## Repository guide
+## Setup and repository reference
 
-### Contents
+### Project structure
 
 - [10_Data_Analysis_with_Python](10_Data_Analysis_with_Python)
 - [11_SqlLite](11_SqlLite)
@@ -45,9 +45,15 @@ Open the relevant .ipynb notebook in Jupyter or a compatible notebook environmen
 
 ### Configuration and limitations
 
+Treat chapter folders and end-to-end projects as independent environments. Inspect dataset paths and dependency requirements per example. Notebook execution and full training pipelines were not run in this audit.
+
 ### Validation
 
-Reviewed on 2026-10-08. Python syntax checks passed for 45 source files. Syntax validation does not establish runtime correctness or dependency compatibility.
+Audit: 2026-10-08. Repository structure, setup instructions and description were reviewed. 44 existing Python files passed syntax checks; changed files and new regression tests were checked separately. Syntax checks do not establish full runtime correctness. External APIs, live scraping, GUI interaction, notebook training and production deployment were not comprehensively exercised.
+
+### Repository description
+
+The short GitHub description is provided in [REPOSITORY_DESCRIPTION.md](REPOSITORY_DESCRIPTION.md).
 
 ### Contributions
 
