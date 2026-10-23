@@ -3,7 +3,7 @@ numpy
 pandas
 matplotlib
 seaborn
-bs4
+beautifulsoup4
 requests
 flask
 streamlit
